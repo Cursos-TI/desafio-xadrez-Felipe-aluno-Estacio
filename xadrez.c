@@ -4,7 +4,41 @@
 // Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
 // O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
 
+// Constantes para as movimentações
+#define BISPO 5
+#define TORRE 5
+#define RAINHA 8
+
 int main() {
+        int i;
+
+    printf("Movimentação das Peças no Jogo:\n\n");
+
+    // Movimentação do Bispo: 5 casas na diagonal superior direita
+    printf("Bispo (5 casas na diagonal superior direita):\n");
+    for (i = 0; i < BISPO; i++) {
+        printf("Direita\n");
+        printf("Cima\n");
+    }
+
+    printf("\n");
+
+    // Movimentação da Torre: 5 casas para a direita
+    printf("Torre (5 casas para a direita):\n");
+    for (i = 0; i < TORRE; i++) {
+        printf("Direita\n");
+    }
+
+    printf("\n");
+
+    // Movimentação da Rainha: 8 casas para a esquerda
+    printf("Rainha (8 casas para a esquerda):\n");
+    for (i = 0; i < RAINHA; i++) {
+        printf("Esquerda\n");
+    }
+
+    printf("\n");
+
     // Nível Novato - Movimentação das Peças
     // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
 
